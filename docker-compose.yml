@@ -10,3 +10,11 @@ services:
     environment:
       - DISPLAY=${DISPLAY}
     tty: true
+  airflow:
+    build: .
+    container_name: airflow
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./dags:/opt/airflow/dags
+    command: ["airflow", "standalone"]

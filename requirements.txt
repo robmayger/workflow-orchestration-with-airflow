@@ -1,4 +1,9 @@
 torch
 numpy
 pandas
+matplotlib
+seaborn
+scikit-learn
+jupyterlab
+torch
 apache-airflow
